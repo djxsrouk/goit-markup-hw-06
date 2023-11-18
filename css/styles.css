@@ -28,6 +28,7 @@ section {
     width: 75%;
     justify-content: space-between;
     padding: 20px;
+    margin-right: 225px;
 }
 .main-nav ul {
     overflow: hidden;
@@ -38,9 +39,15 @@ section {
 }
 .nav-contact {
     display: flex;
-    width: 25%;
     justify-content: space-between;
     align-items: center;
+    width: 35%;
+}
+.nav-contact span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 .nav-link {
     color: var(--nav-link);
@@ -79,6 +86,8 @@ section {
     font-weight: 500;
     font-size: 14px;
     line-height: 16.41px;
+    display: flex;
+    flex-direction: row;
 }
 .info-link:hover, .info-link:hover {
     color: #2196f3;
@@ -428,14 +437,16 @@ body {
 .regular-customers {
     display: flex;
     justify-content: center;
+    padding-left: 225px;
+    padding-right: 225px;
     padding-top: 50px;
     padding-bottom: 94px;
 }
 
 .regular-customers-icon {
     fill: #AFB1B8;
-    width: 170px;
-    height: 92px;
+    width: 106px;
+    height: 70px;
     border-radius: 4px;
     border: 1px;
     display: flex;
@@ -466,6 +477,9 @@ footer {
     background-color: #2F303A;
     height: 251px;
     padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 .container-logo-address address a {
     text-decoration: none;
@@ -578,6 +592,92 @@ footer {
 
 .social-find h4 {
     color: #FFF;    
+}
+
+/* Subscribe Section */
+
+
+.subscribe-section {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 3%;
+    color: #FFF;
+    text-align: left;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: 93px;
+    flex-direction: row;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subscribe-btn .btnform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btnform svg {
+    width: 24px;
+    height: 24px;
+    color: #FFF;
+}
+
+.btnform {
+    background-color: #2196F3;
+    width: 200px;
+    height: 50px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0.96px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 1px #2196F3;
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subcribe-input {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 3%;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subcribe-input::placeholder {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #ffffff99;
+    padding: 15px 0px;
 }
 
 /* Modal */
